@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Backbone Todo</title>
+	<link rel="stylesheet" type="text/css" href="/styles/main.sass.css">
+</head>
+<body>
+	<form id="form">
+		<input id="title" type="text" placeholder="Card Title">
+		<input id="type" type="text" placeholder="Card Type">
+		<input id="rarity" type="text" placeholder="Card Rarity">
+		<input id="number" type="number" placeholder="Number Owned">
+		<button id="submit">Add Card</button>
+	</form>
+
+	<ul id="card-list"></ul>
+
+<script type="text/javascript" src="/scripts/bundle.js"></script>
+<script type="text/template" id="card-row">
+	<li><%= title %> - <%= type %> - <%= rarity %> - <%= number %><button>edit</button></li>
+</script>
+</body>
+</html>
